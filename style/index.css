@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.user img {
+    width: 30px;
+    float: left;
+}
+
+.user p{
+    color: white;
+    float: right;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+
+.menu {
+    background: #261E07;
+    padding: 20px 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.493);;
+}
+
+
+.menu h1{
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    color: white;
+}
+
+.user {
+    float: right;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.container::after, .container::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.opcoes {
+    margin-top: 188px;
+}
+
+.opcoes .a{
+    width: 1890;
+    margin: 0 auto;
+}
+
+.lista-opcoes li{
+    display: inline-block;
+    width: 430px;    
+}
+
+.lista-opcoes li.meio{
+    border-left: 3px solid #D95043;
+    border-right: 3px solid #D95043;
+}
+
+.lista-opcoes li:first-child{
+    width: 430px;
+    border-left: 3px solid #D95043;
+}
+
+.lista-opcoes li img{
+    width: 140px;
+    
+}
+
+.lista-opcoes li img.menor{
+    width: 320px;
+}
+
+.lista-opcoes li:last-child{
+    border-right: 3px solid #D95043;
+}
+
+.lista-opcoes li img{
+    margin: 0 auto;
+}
+
+.lista-opcoes li p{
+    text-align: center;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.lista-opcoes li button{
+    display: block;
+    margin: 0 auto;
+    padding: 20px 40px;
+    background: #D95043;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: .1em;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.493);
+}
+
+.lista-opcoes li p::before{
+    content: '';
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: #D95043;
+    margin: 20px auto 15px auto;
+}
+
+
+
+.footer{
+    background: #261E07;
+    padding: 20px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer p {
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+}
