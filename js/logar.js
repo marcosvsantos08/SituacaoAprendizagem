@@ -1,6 +1,9 @@
 const usuarioInput = window.document.getElementById("usuario")
 const senhaInput = window.document.getElementById("senha")
 const mensagem = window.document.getElementById("msgerro")
+let mostraDados=document.getElementById("mostraDados")
+let nomeEdit= document.getElementById("nomeEdit");
+let userEdit= document.getElementById("userEdit")
 let usuarios = JSON.parse(localStorage.users)
 mensagem.style.color = 'red'
 
@@ -17,4 +20,8 @@ function logar() {
             alert("usuario logado")
         }     
     })
+}
+function dados(){
+    let userlog=JSON.parse(localStorage.getItem("pessoalogada"))
+    mostraDados.innerHTML=`Nome: ${userlog.nome} <br> Usuario: ${userlog.usuario} `
 }
